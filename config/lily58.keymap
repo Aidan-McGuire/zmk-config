@@ -16,10 +16,7 @@
           #binding-cells = <0>;
           bindings =
               <&macro_tap>,
-              <&kp m &kp c &kp g &kp u &kp i &kp r &kp e 
-              &kp MINUS &kp l &kp e &kp s &kp t &kp e &kp r &kp a 
-              &kp AT_SIGN &kp a &kp e &kp t &kp n &kp a 
-              &kp DOT &kp c &kp o &kp m>;
+              <&kp M &kp C &kp G &kp U &kp I &kp rR &kp E &kp MINUS &kp L &kp E &kp S &kp T &kp E &kp R &kp A &kp AT_SIGN &kp A &kp E &kp T &kp N &kp A &kp DOT &kp C &kp O &kp M>;
       };
   };
 
