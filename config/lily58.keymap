@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+  macros {
+      work_email: work_email {
+          compatible = "zmk,behavior-macro";
+          label = "mcguire-lestera@aetna.com";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_tap>,
+              <&kp m &kp c &kp g &kp u &kp i &kp r &kp e 
+              &kp MINUS &kp l &kp e &kp s &kp t &kp e &kp r &kp a 
+              &kp AT_SIGN &kp a &kp e &kp t &kp n &kp a 
+              &kp DOT &kp c &kp o &kp m>;
+      };
+  };
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -43,7 +57,7 @@
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5       &kp F6                       &trans    &trans    &trans          &trans    &trans    &kp PIPE
 &kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp GRAVE
 &kp F7     &kp F8        &kp F9        &kp F10       &kp F11      &kp F12   &trans   &kp RBRC  &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp BSLH
-                                       &trans        &trans       &trans    &trans   &trans    &trans    &trans    &trans
+                                       &trans        &trans       &work_email    &trans   &trans    &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
